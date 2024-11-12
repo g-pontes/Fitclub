@@ -1,8 +1,8 @@
 ## 🏋️‍♀️ Fitclub
-Bem-vindo ao Fitclub, o site perfeito para conectar academias a seus clientes! Este projeto foi criado com uma interface moderna e interativa para tornar a experiência de navegação intuitiva e envolvente para quem busca mais informações sobre a academia, as aulas, serviços e uma comunidade fitness ativa.
+Este projeto foi criado com uma interface moderna e interativa para tornar a experiência de navegação intuitiva e envolvente para quem busca mais informações sobre a academia, as aulas e serviços.
 
 ## 🎨 Visão Geral
-O Fitclub é uma aplicação web de página única (SPA - Single Page Application) com foco em design responsivo e navegação fluida. Desenvolvido em HTML, CSS e JavaScript, o site traz tudo o que uma academia precisa para atrair clientes de forma prática e eficiente.
+O Fitclub é uma aplicação web de página única com foco em design responsivo e navegação fluida. Desenvolvido em HTML, CSS e JavaScript, o site traz tudo o que uma academia precisa para atrair clientes de forma prática e eficiente.
 
 ## 🔗 Demonstração Online
 URL de demonstração: [Insira o link aqui quando estiver disponível]
