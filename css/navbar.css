@@ -132,13 +132,18 @@
     background-color: var(--clr-white);
 }
 
-.scroll-header .register:hover {
-    color: var(--clr-dark-green);
-    border: 2px solid var(--clr-dark-green);
+.scroll-header .join {
+    background-color: var(--clr-white);
+    color: var(--clr-light-yellow);
+}
+
+.scroll-header .join:hover {
+    background-color: var(--clr-dark-yellow);
+    color: var(--clr-white);
 }
 
 @media screen and (max-width:1530px) {   
-    .register{
+    .join{
         margin-right: 2rem;
     }
 }
@@ -155,7 +160,7 @@
         margin-right: 1.6rem;
     }
     
-    .register{
+    .join{
         font-size: 1.4rem;
         padding: .8rem 1.6rem;
         border: 2px solid var(--clr-white);
