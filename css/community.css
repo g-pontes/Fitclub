@@ -1,0 +1,23 @@
+.community {
+    background-color: var(--clr-dark-gray);
+    padding-block: calc(var(--header-height) + 7rem);
+}
+
+.community-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.community-img {
+    position: relative;
+}
+
+.community-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.community-description {
+    color: var(--clr-white);
+}
+  
