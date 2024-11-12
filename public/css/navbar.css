@@ -1,0 +1,246 @@
+.header {
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    z-index: 3;
+    transition: all .4s;
+}
+
+.navbar {
+    height: calc(var(--header-height) + 10.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .4s;
+}
+
+.nav-logo {
+    width: 16rem;
+    margin-left: 1.6rem;
+}
+
+.nav-logo-white {
+    width: 8rem;
+    margin-left: 2rem;
+    display: none;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-list__link {
+    display: block;
+    font-size: 1.6rem;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+    text-transform: capitalize;
+    color: var(--clr-white);
+    position: relative;
+}
+
+.line::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--clr-light-yellow);
+    transition: all .5s;
+}
+
+.line:hover::before {
+    width: 50%;
+}
+
+.join{
+    font-size: 1.6rem;
+    padding: 1.2rem 2.6rem;
+    margin-right: 1.6rem;
+    border-radius: .5rem;
+    transition: all .5s;
+    color: var(--clr-white);
+    background-color: var(--clr-light-yellow);
+    transition: all .5s;
+}
+
+.join:hover {
+    background-color: var(--clr-dark-yellow);
+}
+
+
+.nav-close {
+    display: none;
+}
+
+.nav-toggle {
+    color: var(--clr-white);
+    font-weight: 400;
+    font-size: 3.5rem;
+    margin-right: 1.6rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* active link */
+
+.active-link {
+    position: relative;
+}
+
+.active-link::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--clr-light-yellow);
+    transition: all .5s;
+}
+
+/* Change background header */
+
+.scroll-header {
+    background-color: var(--clr-light-yellow);
+    box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1);
+}
+
+.scroll-header .navbar {
+    height: calc(var(--header-height) + 5.5rem);
+}
+
+.scroll-header .nav-logo {
+    display: none;
+}
+
+.scroll-header .nav-logo-white {
+    display: block;
+}
+
+.scroll-header .line::before {
+    background-color: var(--clr-white);
+}
+
+.scroll-header .active-link::before {
+    background-color: var(--clr-white);
+}
+
+.scroll-header .join {
+    background-color: var(--clr-white);
+    color: var(--clr-light-yellow);
+}
+
+.scroll-header .join:hover {
+    background-color: var(--clr-dark-yellow);
+    color: var(--clr-white);
+}
+
+@media screen and (max-width:1530px) {   
+    .join{
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .navbar-list__link {
+        font-size: 1.4rem;
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
+    }
+
+    .login {
+        font-size: 1.4rem;
+        margin-right: 1.6rem;
+    }
+    
+    .join{
+        font-size: 1.4rem;
+        padding: .8rem 1.6rem;
+        border: 2px solid var(--clr-white);
+    }
+}
+
+@media screen and (max-width:900px) {
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .navbar-list__link {
+        font-size: 1.6rem;
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
+    }
+
+    .nav-login {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .navbar {
+        height: var(--header-height-mobile);
+        justify-content: space-between;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-login {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        width: 100%;
+        background: var(--clr-white);
+        top: -150%;
+        left: 0;
+        padding: 3.5rem 0;
+        z-index: 5;
+        border-radius: 0 0 .4rem .4rem;
+        transition: .4s;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        row-gap: 2.5rem;
+        align-items: start;
+    }
+
+    .nav-close {
+        display: block;
+        font-size: 2.4rem;
+        position: absolute;
+        top: .5rem;
+        right: .7rem;
+        cursor: pointer;
+    }
+
+    .navbar-list__link {
+        color: var(--clr-dark-green);
+    }
+
+    .scroll-header .line::before {
+        background-color: var(--clr-light-yellow);
+    }
+    
+    .scroll-header .active-link::before {
+        background-color: var(--clr-light-yellow);
+    }
+
+    .nav-login {
+        display: none;
+    }
+
+
+    /* show menu */
+
+    .show-menu {
+        top: 0;
+    }
+}

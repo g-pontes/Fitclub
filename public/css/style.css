@@ -1,0 +1,89 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/***************/
+/* Váriaveis
+/***************/
+
+:root {
+
+    --header-height: 1.5rem;
+    --header-height-mobile: 7.5rem;
+
+    --ff-primary: "Poppins", sans-serif;
+
+    --clr-white: #FFFFFF;
+    --clr-black: #000000;
+    --clr-background:#111317;
+    --clr-light-yellow: #f9ac54;
+    --clr-dark-yellow: #d79447;
+    --clr-light-gray: #d1d5db;
+    --clr-medium-gray: #35373b;
+    --clr-dark-gray: #1f2125;
+
+
+    --spacing: 0.25rem;
+    --transition: all 0.2s linear;
+    --dark-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+/******************/
+/* Estilos Gerais
+/******************/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--clr-background);
+    font-family: var(--ff-primary);
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+.container-page {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+}
+
+@media screen and (max-width: 1580px) {
+    .container-page {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1300px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .container-page {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1100px;
+    }
+}

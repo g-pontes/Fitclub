@@ -1,0 +1,127 @@
+.class {
+    padding-block: calc(var(--header-height) + 2rem);
+}
+
+.class-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.class-img {
+    width: 600px;
+    border-radius: 1.6rem;
+}
+
+.class-subImg {
+    border-radius: 1.6rem;
+    width: 300px;
+    position: absolute;
+    transform: translateY(-100px) translateX(-50px);
+}
+
+.class-title {
+    font-size: 4rem;
+    max-width: 50rem;
+    color: var(--clr-white);
+    margin-bottom: 2rem;
+}
+
+.class-description {
+    color: var(--clr-light-gray);
+    max-width:30vw;
+    margin-bottom: 8rem;
+}
+
+.class-btn {
+    font-size: 1.6rem;
+    padding: 1.4rem 2.6rem;
+    border-radius: .5rem;
+    transition: all .5s;
+    color: var(--clr-white);
+    background-color: var(--clr-light-yellow);
+    transition: all .5s;
+}
+
+.class-btn:hover {
+    background-color: var(--clr-dark-yellow);
+}
+
+@media (max-width: 1360px) {
+    .class-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+    .class-title {
+    font-size: 3rem;
+    max-width: 40rem;
+    color: var(--clr-white);
+    margin-bottom: 2rem;
+}
+
+.class-description {
+    color: var(--clr-light-gray);
+    max-width:35vw;
+    margin-bottom: 8rem;
+}
+
+.class-btn {
+    font-size: 1.6rem;
+    padding: 1.4rem 2.6rem;
+    border-radius: .5rem;
+    transition: all .5s;
+    color: var(--clr-white);
+    background-color: var(--clr-light-yellow);
+    transition: all .5s;
+}
+}
+
+@media (max-width: 1170px) {
+    .class-img {
+        width: 500px;
+        border-radius: 1.6rem;
+    }
+    
+    .class-subImg {
+        display: none;
+    }
+
+    .class-description {
+        color: var(--clr-light-gray);
+        max-width:35vw;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 1170px) {
+    .class-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .class-img {
+        width: 80vw;
+        border-radius: 1.6rem;
+    }
+
+    .class-title {
+        text-align: center;
+    }
+
+    .class-description {
+        color: var(--clr-light-gray);
+        max-width:80vw;
+        margin-bottom: 3rem;
+    }
+
+    .class-left-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .class-btn {
+        max-width: 35vw;
+        font-size: 1.2rem;
+    }
+}
