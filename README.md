@@ -5,7 +5,7 @@ Este projeto foi criado com uma interface moderna e interativa para tornar a exp
 O Fitclub é uma aplicação web de página única com foco em design responsivo e navegação fluida. Desenvolvido em HTML, CSS e JavaScript, o site traz tudo o que uma academia precisa para atrair clientes de forma prática e eficiente.
 
 ## 🔗 Demonstração Online
-URL de demonstração: [Insira o link aqui quando estiver disponível]
+URL de demonstração: https://fitclub-fawn.vercel.app/
 
 ## 📂 Estrutura de Diretórios
 
